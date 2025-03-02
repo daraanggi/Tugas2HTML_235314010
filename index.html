@@ -2,10 +2,89 @@
 <html lang="id">
 <head>
     <title>Tentang Dara Anggi Puspa</title>
-</head>
-<body id ="body" style ="text-align: center; background-color: rgb(244, 178, 178);">
+    <style>
+        body{
+            text-align: center;
+            background-color:rgb(78, 147, 157);
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: rgb(155, 197, 203);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
 
-    <h1 align="center">Dara Anggi Puspa - 235314010</h1>
+        h1 {
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .content p {
+            text-align: justify;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        img {
+            border: 1px solid #693537;
+            border-radius: 4px;
+            padding: 5px;
+            width: 250px;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scaleX(-1);
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        td {
+            text-align: center;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #6591a6;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <h1>Dara Anggi Puspa - 235314010</h1>
     
     <p align="right">
         Halo, perkenalkan saya <b>Dara</b>, mahasiswa <b>Informatika</b> angkatan 2023 di <u>Universitas Sanata Dharma</u>. 
@@ -27,7 +106,7 @@
     </p>
 
     <div align="center">
-        <img src="lany.jpg" alt="Lany's album" width="200">
+        <img src="lany.jpg" alt="Lany's album">
     </div>
 
     <p align="center">
@@ -57,8 +136,7 @@
         Berikut adalah jadwal kuliah saya dalam seminggu:
     </p>
 
-    <div align="center">
-    <table border="1" cellspacing="0" cellpadding="5">
+    <table>
         <tr>
             <th>Hari/Jam</th>
             <th>07-08</th>
@@ -107,7 +185,6 @@
             <td colspan="5">RPLN104 Rekayasa Perangkat Lunak</td>
         </tr>
     </table>
-    </div>
     <p align="center">Terima kasih sudah membaca halaman saya!</p>
 </body>
 </html>
