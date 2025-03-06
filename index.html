@@ -3,105 +3,7 @@
 <head>
     <title>Tentang Dara Anggi Puspa</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        body {
-            text-align: center;
-            background-color: rgb(78, 147, 157);
-            font-family: 'Times New Roman', Times, serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-            background: rgb(155, 197, 203);
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        .content {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .content p {
-            text-align: justify;
-        }
-
-        .image-container {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
-
-        img {
-            border: 1px solid #693537;
-            border-radius: 4px;
-            padding: 5px;
-            width: 250px;
-            transition: transform 0.3s;
-        }
-
-        img:hover {
-            transform: scaleX(-1);
-        }
-
-        .table-container {
-            overflow-x: auto;
-            margin-top: 20px;
-        }
-
-        table, th, td {
-            border: 1px solid;
-            border-collapse: collapse;
-        }
-
-        table {
-            width: 100%;
-            margin-top: 10px;
-        }
-
-        td {
-            text-align: center;
-            padding: 8px;
-        }
-
-        tr:nth-child(even) {
-            background-color: #6591a6;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-            padding: 20px;
-        }
-
-        /* Styling untuk ikon media sosial */
-        .social-icons {
-            margin-top: 10px;
-        }
-
-        .social-icons a {
-            display: inline-block;
-            margin: 0 10px;
-            color: black;
-            font-size: 30px;
-            text-decoration: none;
-            transition: transform 0.3s, color 0.3s;
-        }
-
-        .social-icons a:hover {
-            transform: scale(1.2);
-            color: #0073e6;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -116,7 +18,8 @@
                 tetapi juga memperluas wawasan, membangun relasi, dan mengisi waktu dengan hal yang bermanfaat. 
                 Saat ini, saya ingin lebih fokus dalam mengembangkan keterampilan <i>pemrograman</i> untuk memperdalam pemahaman 
                 dan meningkatkan kemampuan saya di bidang ini.
-
+            </p>
+            
             <p align="justify">
                 Saya juga memiliki hobi mendengarkan musik. Musik bagi saya bukan hanya sekedar hiburan, tetapi juga menjadi bagian dari keseharian yang selalu menemani berbagai aktivitas. 
                 Saya mendengarkan musik hampir setiap saat ketika sedang bersantai, mengerjakan tugas, atau bahkan saat merasa bosan. Musik dapat membantu saya tetap fokus, meningkatkan suasana hati, 
@@ -126,10 +29,11 @@
             </p>
             
             <div align="center">
-                <img src="lany.jpg" alt="Lany's album">
+                <img src="lany.jpg" alt="Album LANY" width="300">
             </div>
 
-            <p align="center">
+            <div align="center">
+                <p>
                 Jika kalian ingin tahu lebih banyak tentang musik favorit saya, kalian bisa mencoba mendengarkan lagu-lagu dari <b><i>LANY</i></b>. 
                 Band ini memiliki gaya musik yang khas dengan nuansa pop yang menenangkan serta lirik yang dalam dan emosional. 
                 Saya sangat merekomendasikan beberapa album mereka yang penuh dengan lagu-lagu bertema cinta, kehidupan, dan perjalanan seseorang dalam menemukan jati diri. 
@@ -141,76 +45,26 @@
                 saya sangat merekomendasikan untuk mendengarkan beberapa lagu favorit saya dari LANY. 
                 Kalian bisa klik tautan berikut untuk menikmati playlist favorit saya:
                 <a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO2qrZLy?si=23b625da04574bb5" target="_blank">
-                    Playlist Album LANY
-                </a>.
+                    🎵 Playlist Album LANY
+                </a>
             </p>
-            <p align="left">
-                Saat ini, jadwal kuliah saya cukup padat dengan berbagai mata kuliah di semester 4 ini. 
-                Setiap hari, saya harus membagi waktu secara efektif agar tidak hanya bisa mengikuti perkuliahan dengan baik, 
-                tetapi juga menyelesaikan tugas-tugas yang diberikan dengan tepat waktu. Manajemen waktu menjadi sangat penting, 
-                terutama ketika ada deadline yang berdekatan atau tugas proyek yang memerlukan banyak perhatian. 
-                <br><br>
-                Berikut adalah jadwal kuliah saya dalam seminggu:
-            </p>
-                <table>
-                    <tr>
-                        <th>Hari/Jam</th>
-                        <th>07-08</th>
-                        <th>08-09</th>
-                        <th>09-10</th>
-                        <th>10-11</th>
-                        <th>11-12</th>
-                        <th>12-13</th>
-                        <th>13-14</th>
-                        <th>14-15</th>
-                        <th>15-16</th>
-                        <th>16-17</th>
-                        <th>17-18</th>
-                    </tr>
-                    <tr>
-                        <td>Senin</td>
-                        <td colspan="2">KEWR101 Kewirausahaan</td>
-                        <td></td>
-                        <td colspan="2">INFO114 KomParDis</td>
-                        <td colspan="6"></td>
-                    </tr>
-                    <tr>
-                        <td>Selasa</td>
-                        <td colspan="3"></td>
-                        <td colspan="2">RPLN105 IMK</td>
-                        <td></td>
-                        <td colspan="5">INFO115 Pembelajaran Mesin</td>
-                    </tr>
-                    <tr>
-                        <td>Rabu</td>
-                        <td colspan="6"></td>
-                        <td colspan="2">INFO116 Manajemen Informasi</td>
-                        <td colspan="3"></td>
-                    </tr>
-                    <tr>
-                        <td>Kamis</td>
-                        <td colspan="3">INFO113 ASA</td>
-                        <td colspan="3"></td>
-                        <td colspan="2">ETIK101 Etika Profesi</td>
-                        <td colspan="3"></td>
-                    </tr>
-                    <tr>
-                        <td>Jumat</td>
-                        <td colspan="5">RPLN103 Pembelajaran Platform</td>
-                        <td></td>
-                        <td colspan="5">RPLN104 Rekayasa Perangkat Lunak</td>
-                    </tr>
-                </table>
             </div>
 
-            <div class="footer">
-                <p>Terima kasih sudah membaca halaman saya!</p>
-                <p>Jika Anda ingin menghubungi saya, bisa melalui:</p>
-                <div class="social-icons">
-                <a href="https://www.instagram.com/dapuspaa//" target="_blank" title="Instagram">
+            <p align="center">
+                Ingin tahu lebih lanjut tentang aktivitas akademik saya? Silakan klik tombol di bawah untuk melihat jadwal kuliah saya.
+            </p>
+            <div class="nav-button">
+                <a href="jadwal.html">Lihat Jadwal Kuliah</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Hubungi saya melalui:</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/dapuspaa/" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://github.com/daraanggi" target="_blank" title="GitHub">
+                <a href="https://github.com/daraanggi" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
             </div>
