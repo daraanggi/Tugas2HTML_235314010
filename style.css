@@ -105,6 +105,7 @@ img:hover {
 .table-container {
   overflow-x: auto;
   margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 /* style untuk tabel dan border */
