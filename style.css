@@ -1,135 +1,160 @@
+/* mengatur margin, padding, dan box-sizing utk seluruh elemen agar lebih konsisten */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* pengaturan tampilan dasar body */
 body {
-    text-align: center;
-    background-image: url(dot-grid.png);
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
+  text-align: center;
+  background-image: url(dot-grid.png);
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* container utama agar kontennya lebih rapi di tengah */
 .container {
-    width: 60%;
-    margin: auto;
-    padding: 20px;
-    background: rgb(244, 241, 235);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+  background: rgb(244, 241, 235);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+/* pengaturan heading utama */
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
+/* navigasi */
 nav {
-    padding: 5px 0; 
-    text-align: center;
-    width: 100%; 
-    min-height: 30px; 
-    line-height: 30px; 
+  padding: 5px 0;
+  text-align: center;
+  width: 100%;
+  min-height: 30px;
+  line-height: 30px;
 }
 
+/* mengatur tampilan daftar menu navigasi */
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
+/* style untuk link dalam navigasi */
 nav ul li a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    padding: 10px 15px;
-    display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  padding: 10px 15px;
+  display: inline-block;
 }
 
+/* menambahkan separator "|" antar item menu kecuali yang terakhir */
 nav ul li:not(:last-child)::after {
-    content: " | ";
-    color: rgb(0, 0, 0);
-    padding-left: 10px;
+  content: " | ";
+  color: rgb(0, 0, 0);
+  padding-left: 10px;
 }
 
+/* efek hover pada menu navigasi */
 nav ul li a:hover {
-    color: #ae0202;
+  color: #ae0202;
 }
 
+/* mengatur konten */
 .content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
+/* mengatur paragraf agar rata kiri-kanan */
 .content p {
-    text-align: justify;
+  text-align: justify;
 }
 
+/* container untuk gambar */
 .image-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 
+/* style untuk gambar */
 img {
-    border: 1px solid #693537;
-    border-radius: 4px;
-    padding: 5px;
-    width: 250px;
-    transition: transform 0.3s;
+  border: 1px solid #693537;
+  border-radius: 4px;
+  padding: 5px;
+  width: 250px;
+  transition: transform 0.3s;
 }
 
+/* efek hover pada gambar (membalik secara horizontal) */
 img:hover {
-    transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
+/* membuat tabel lebih responsif dengan scroll horizontal */
 .table-container {
-    overflow-x: auto;
-    margin-top: 20px;
+  overflow-x: auto;
+  margin-top: 20px;
 }
 
-table, th, td {
-    border: 1px solid;
-    border-collapse: collapse;
-}
-
-table {
-    width: 100%;
-    margin-top: 10px;
-}
-
+/* style untuk tabel dan border */
+table,
+th,
 td {
-    text-align: center;
-    padding: 8px;
+  border: 1px solid;
+  border-collapse: collapse;
 }
 
+/* mengatur lebar tabel agar penuh */
+table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* pengaturan sel tabel */
+td {
+  text-align: center;
+  padding: 8px;
+}
+
+/* warna latar belakang untuk baris genap dalam tabel */
 tr:nth-child(even) {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
+/* footer */
 .footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
 }
 
+/* container untuk ikon media sosial */
 .social-icons {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
+/* style untuk ikon media sosial */
 .social-icons a {
-    display: inline-block;
-    margin: 0 10px;
-    color: black;
-    font-size: 30px;
-    text-decoration: none;
-    transition: transform 0.3s, color 0.3s;
+  display: inline-block;
+  margin: 0 10px;
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s;
 }
 
+/* efek hover pada ikon media sosial */
 .social-icons a:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
